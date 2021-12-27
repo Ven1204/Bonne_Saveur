@@ -1,7 +1,10 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: #fff;
+  font-family: 'Redressed', cursive;
+  font-size: 20px;
 }
+
 .navbar {
   padding: 0 24px;
 }
@@ -17,4 +20,8 @@
 .navbar-lewagon .navbar-brand {
   padding-bottom: 0;
   padding-top: 0;
+}
+
+.nav-item {
+  padding-left: 16px;
 }

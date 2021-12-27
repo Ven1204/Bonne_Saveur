@@ -2,5 +2,29 @@
   position: fixed;
   bottom: 16px;
   right: 16px;
-  z-index: 1000;
+  z-index: 100;
+  animation: ease-in-out;
+  display: block;
+  animation: hideAnimation 0s ease-in 4s;
+  animation-fill-mode: forwards;
+  opacity: 9;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.alert-info {
+  background-color: rgb(222, 241, 253);
+  border-radius: 16px;
+  transition: ease-in-out;
+}
+
+.alert-warning {
+  background-color: rgb(248, 248, 208);
+  border-radius: 16px;
+  transition: ease-in-out;
+  opacity: 9;
 }

@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'profile', to: 'pages#profile'
+
+  resources :products, only: [:index, :show] do
+    resources :orders, only: [:create]
+  end
+
+  # resources :orders, only [] do
+  #   member do
+  #     patch :accept
+  #     patch :reject
+  #   end
+  # end
 end

@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="navbar-brand">
-  <%= link_to "#" do %>
+  <%= link_to "/" do %>
     <%= image_tag "https://res.cloudinary.com/rvnsllrry/image/upload/v1640625987/Bonne_Saveur_-_logo_q2qg53.png" %>
   <% end %>
   </div>
@@ -16,7 +16,7 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+          <%= link_to "Home", "/", class: "nav-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "Messages", "#", class: "nav-link" %>

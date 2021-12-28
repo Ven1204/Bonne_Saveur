@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import classes from './app.module.css';
+import classes from './landing.module.css';
 
-class App extends Component {
+class Landing extends Component {
   render() {
     return (
       <div className={classes.container}>
@@ -13,4 +13,4 @@ class App extends Component {
   }
 };
 
-export default App;
+export default Landing;

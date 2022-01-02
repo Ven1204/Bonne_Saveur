@@ -1,0 +1,83 @@
+body {
+    font-family: 'Redressed', cursive;
+    background-color: #e7e7e7;
+}
+// container
+.registration-container {
+    width: 400px;
+    height: 550px;
+    position: relative;
+    margin: 3% auto;
+    box-shadow: 2px 18px 70px 0px #9D9D9D;
+    overflow: hidden;
+}
+
+// h2 font
+.registration-container h2 {
+  font-family: 'Redressed', cursive;
+  margin: 24px 34px 16px 34px;
+}
+
+// forms section
+.form-inputs {
+  color: #333;
+  margin: 0 40px;
+}
+
+// sign up button
+.form-actions .btn {
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to left, #ab68ca, #de67a3);
+  color: #fff;
+
+  cursor: pointer;
+  outline: none;
+  margin-left: 50px;
+  text-align: center;
+
+}
+// sign up button hover
+.form-actions .btn:hover{
+  color: #444;
+  transition: all 0.3s ease-in-out;
+
+}
+// login button
+.log-in a {
+  border-radius: 100rem;
+  padding: 6px 50px;
+  font-family: 'Redressed', cursive;
+  font-size: 1rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ab68ca, #de67a3);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  display: block;
+  margin: 8px 50px;
+  text-align: center;
+  color: #de67a3;
+}
+// login button hover effect
+.log-in a:hover {
+  border-radius: 100rem;
+  padding: 6px 50px;
+  font-family: 'Redressed', cursive;
+  font-size: 1rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #de67a3, #ab68ca );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px linear-gradient(to left, #ab68ca, #de67a3) inset;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}

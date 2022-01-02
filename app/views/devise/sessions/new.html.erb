@@ -1,20 +1,58 @@
-<h2>Log in</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+<%# container %>
+<div class="wrapper">
+  <div class="login-text">
+    <%# dropdown button %>
+    <button class="cta"><i class="fas fa-chevron-down fa-1x"></i></button>
+    <%# form container %>
+    <div class="text">
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%# email %>
+        <%= f.input :email,
+                    required: false,
+                    autofocus: true,
+                    input_html: { autocomplete: "email" } %>
+        <%# password %>
+        <%= f.input :password,
+                    required: false,
+                    input_html: { autocomplete: "current-password" } %>
+        <%# checkbox %>
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+        <%# submit button %>
+        <%= f.button :submit, "Log in" %>
+      <% end %>
+    </div>
+    <%= render "devise/shared/links" %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
+  <div class="call-text">
+    <h1>Show us your <span>creative</span> side</h1>
+    <h2>Join our Community</h2>
   </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+</div>
+
+
+
+
+<%# JS for dropdown button %>
+<script>
+  var cta = document.querySelector(".cta");
+  var check = 0;
+
+  cta.addEventListener('click', function(e){
+      var text = e.target.nextElementSibling;
+      var loginText = e.target.parentElement;
+      text.classList.toggle('show-hide');
+      loginText.classList.toggle('expand');
+      if(check == 0)
+      {
+          cta.innerHTML = "<i class=\"fas fa-chevron-up\"></i>";
+          check++;
+      }
+      else
+      {
+          cta.innerHTML = "<i class=\"fas fa-chevron-down\"></i>";
+          check = 0;
+      }
+  })
+</script>

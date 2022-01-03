@@ -6,7 +6,7 @@ class Landing extends Component {
     return (
       <div className={classes.container}>
       <h1>Welcome to Bonne Saveur!</h1>
-      <h2>Coming Soon!!</h2>
+      <h2>This is a banner</h2>
       </div>
 
     )

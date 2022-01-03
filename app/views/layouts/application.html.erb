@@ -10,6 +10,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%#= javascript_pack_tag 'hello_react' %>
   </head>
 
   <body>
@@ -18,8 +19,9 @@
 
 
     <%= yield %>
+
   </body>
-  <footer>
-    <%= render 'shared/footer' %>
-  </footer>
+  <%# <footer> %>
+    <%#= render 'shared/footer' %>
+  <%# </footer> %>
 </html>

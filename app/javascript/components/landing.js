@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import classes from './landing.module.css';
+import Navbar from './navbar/navbar'
+import Footer from './footer/footer'
 
 class Landing extends Component {
   render() {
     return (
-      <div className={classes.container}>
-      <h1>Welcome to Bonne Saveur!</h1>
-      <h2>This is a banner</h2>
+      <div>
+        <Navbar />,
+        <Footer />
       </div>
-
     )
   }
 };

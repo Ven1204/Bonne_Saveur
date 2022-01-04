@@ -1,0 +1,12 @@
+/* .banner {
+  background-color: #444;
+  height: 50%;
+  width: auto;
+} */
+
+.home-section--1{
+  background: linear-gradient(#ab68ca, #de67a3);
+  min-height: 550px;
+  padding: 80px 50px;
+  color: #fff;
+}

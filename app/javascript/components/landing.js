@@ -3,7 +3,8 @@ import classes from './landing.module.css';
 import Navbar from './navbar/navbar'
 import Footer from './footer/footer'
 import Tables from './tables/tables'
-
+import NameForm from './form/form';
+import Basket from '../components/basket/basket'
 
 
 class Landing extends Component {
@@ -41,7 +42,8 @@ class Landing extends Component {
   render() {
     return (
       <div>
-        <Navbar />,
+        {/* <Navbar />, */}
+        <Basket />,
         <Tables handleVideoChange={this.handleVideoChange.bind(this)} course_modules={this.state.course_modules} />,
         <Footer />,
 

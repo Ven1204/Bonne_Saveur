@@ -1,12 +1,46 @@
-/* .banner {
+.banner {
   background-color: #444;
   height: 50%;
   width: auto;
-} */
+}
 
-.home-section--1{
+.home-section{
   background: linear-gradient(#ab68ca, #de67a3);
   min-height: 550px;
   padding: 80px 50px;
   color: #fff;
+}
+
+.heeading{
+  font-family: Redressed, cursive;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.subheading{
+  font-family: Redressed, cursive;
+  font-size: 40px;
+}
+
+.start-btn{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(#ab68ca, #de67a3);
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    box-shadow: 0px 0px 4px 1px #fff;
+}
+.register-btn{
+    height: 40px;
+    width: 180px;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
 }

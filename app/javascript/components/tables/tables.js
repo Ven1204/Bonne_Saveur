@@ -9,11 +9,11 @@ class Tables extends Component {
 
   render(){
     const lists = this.props.course_modules.map((data) =>{
-      let handleVideoChange = this.props.handleVideoChange.bind(this, data)
+      let handleChange = this.props.handleChange.bind(this, data)
       return (
         data.active ?
-        <ActiveList handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} /> :
-        <List handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} />
+        <ActiveList handleChange={handleChange} key={data.id} title={data.title} description={data.description} /> :
+        <List handleChange={handleChange} key={data.id} title={data.title} description={data.description} />
       )
     })
 
@@ -23,8 +23,9 @@ class Tables extends Component {
           <div className='text-center'>
             <h2 className='pt-4 pb-4'>Full Course Products</h2>
           </div>
-
-          {lists}
+          <div>
+            {lists}
+          </div>
         </div>
       </div>
     )

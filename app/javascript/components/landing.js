@@ -12,17 +12,16 @@ class Landing extends Component {
     super()
     this.state = {
       course_modules: [
-        {id: 1, title: "Hors d'oeuvres", description: 'lorem ipsum', active: false},
-        {id: 2, title: 'Soupe', description: 'lorem ipsum', active: false},
-        {id: 3, title: 'Plat Principal', description: 'lorem ipsum', active: false},
-        {id: 4, title: 'Le Dessert', description: 'lorem ipsum', active: false},
-        {id: 5, title: 'title3', description: 'lorem ipsum', active: false},
-        {id: 6, title: 'title4', description: 'lorem ipsum', active: false},
+        {id: 1, title: "Hors d'Oeuvres", description: 'A small savoury dish, typically one served as an appetizer.', active: false},
+        {id: 2, title: 'Soupe', description: 'A liquid dish, typically savoury and made by boiling meat, fish, or vegetables etc. in stock or water.', active: false},
+        {id: 3, title: 'Plat Principal', description: "A main course is the featured or primary dish in a meal consisting of several courses. It usually follows the entrée ('entry')/ Hors d'oeuvres course.", active: false},
+        {id: 4, title: 'Le Dessert', description: 'The sweet course eaten at the end of a meal.', active: false},
+
       ]
     }
   }
 
-  handleVideoChange(item, event){
+  handleChange(item, event){
     event.preventDefault()
 
     let course_modules = [...this.state.course_modules]
@@ -44,7 +43,7 @@ class Landing extends Component {
       <div>
         {/* <Navbar />, */}
         <Basket />,
-        <Tables handleVideoChange={this.handleVideoChange.bind(this)} course_modules={this.state.course_modules} />,
+        <Tables handleChange={this.handleChange.bind(this)} course_modules={this.state.course_modules} />,
         <Footer />,
 
       </div>

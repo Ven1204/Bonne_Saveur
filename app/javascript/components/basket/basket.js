@@ -5,7 +5,7 @@ import Tables from '../tables/tables'
 
 class Basket extends Component {
     state = {
-      divcontainer:false,
+      divcontainer:true,
     }
 
   render() {
@@ -21,10 +21,8 @@ class Basket extends Component {
     const x = this.state.divcontainer;
     return(
 
-      <div>
-        <h1>hide section</h1>
-        <hr />
-        <button onClick={hideBanner}>{x?'hide':'show'}</button>
+      <div className='bg-white'>
+         <img onClick={hideBanner} src={"https://res.cloudinary.com/rvnsllrry/image/upload/v1640625987/Bonne_Saveur_-_logo_q2qg53.png"} width="80" height="80" alt="Bonne Saveur logo" />
         { x && (
           <div>
             <Section className="home-section--1">

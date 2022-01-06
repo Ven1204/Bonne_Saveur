@@ -16,6 +16,7 @@ const activeList = (props) => {
                   <p>{props.description}</p>
                   <div className='cta-wrapper'>
                     <a className='btn cta-btn'>Voir notre - {props.title}</a>
+                      {/* {This should render you to page where you can see all the library of the product chosen} */}
                   </div>
                 </div>
               </div>

@@ -16,8 +16,7 @@ class Landing extends Component {
         {id: 2, title: 'Soupe', description: 'A liquid dish, typically savoury and made by boiling meat, fish, or vegetables etc. in stock or water.', active: false},
         {id: 3, title: 'Plat Principal', description: "A main course is the featured or primary dish in a meal consisting of several courses. It usually follows the entrée ('entry')/ Hors d'oeuvres course.", active: false},
         {id: 4, title: 'Le Dessert', description: 'The sweet course eaten at the end of a meal.', active: false},
-        {id: 5, title: 'title3', description: 'lorem ipsum', active: false},
-        {id: 6, title: 'title4', description: 'lorem ipsum', active: false},
+
       ]
     }
   }

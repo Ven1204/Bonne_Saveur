@@ -5,12 +5,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Landing from '../components/landing'
+import Banner from '../components/newLanding/Banner'
 // import Navbar from '../components/navbar/navbar'
 // import Footer from '../footer/footer'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Landing/>,
+    // <Banner />,
     document.body.appendChild(document.createElement('div')),
   )
 })

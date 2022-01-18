@@ -1,22 +1,20 @@
 import React, {Component} from 'react';
-import classes from './landing.module.css';
 import Navbar from './navbar/navbar'
 import Footer from './footer/footer'
 import Tables from './tables/tables'
-import NameForm from './form/form';
 import Basket from '../components/basket/basket'
-import Clock from './clocks/Clock';
+
 
 
 class Landing extends Component {
   constructor() {
     super()
     this.state = {
-      course_modules: [
-        {id: 1, title: "Hors d'Oeuvres", description: 'A small savoury dish, typically one served as an appetizer.', active: false},
-        {id: 2, title: 'Soupe', description: 'A liquid dish, typically savoury and made by boiling meat, fish, or vegetables etc. in stock or water.', active: false},
-        {id: 3, title: 'Plat Principal', description: "A main course is the featured or primary dish in a meal consisting of several courses. It usually follows the entrée ('entry')/ Hors d'oeuvres course.", active: false},
-        {id: 4, title: 'Le Dessert', description: 'The sweet course eaten at the end of a meal.', active: false},
+      product_item: [
+        {id: 1, title: "Black Forest Cake", description: 'Black Forest gâteau or Black Forest cake is a chocolate sponge cake with a rich cherry filling based on the German dessert Schwarzwälder Kirschtorte, literally "Black Forest Cherry-torte". Typically, Black Forest gateau consists of several layers of chocolate sponge cake sandwiched with whipped cream and cherries.', active: false},
+        {id: 2, title: 'Peach Fluffy Cheese Cake', description: 'Cheesecake is a sweet dessert consisting of one or more layers. The main, and thickest, layer consists of a mixture of a soft, fresh cheese, eggs, and sugar. If there is a bottom layer, it most often consists of a crust or base made from crushed cookies, graham crackers, pastry, or sometimes sponge cake.', active: false},
+        {id: 3, title: 'Ube & Macapuno Cake', description: "Ube cake is generally prepared identically to mamón (chiffon cakes and sponge cakes in Filipino cuisine), but with the addition of mashed purple yam to the ingredients. It is typically made with flour, eggs, sugar, a dash of salt, baking powder, vanilla, oil, milk, and cream of tartar.", active: false},
+        {id: 4, title: 'Triple Chocolate Cake', description: 'Chocolate cake or chocolate gâteau is a cake flavored with melted chocolate, cocoa powder, or both', active: false},
 
       ]
     }
@@ -25,17 +23,17 @@ class Landing extends Component {
   handleChange(item, event){
     event.preventDefault()
 
-    let course_modules = [...this.state.course_modules]
+    let product_item = [...this.state.product_item]
 
-    course_modules.map( data => {
+    product_item.map( data => {
       data.active = false
     })
 
     item.active = !item.active
 
-    course_modules[item.id - 1] = item
+    product_item[item.id - 1] = item
 
-    this.setState({course_modules})
+    this.setState({product_item})
   }
 
 
@@ -43,9 +41,9 @@ class Landing extends Component {
     return (
       <div>
         {/* <Navbar />, */}
-        <Clock />,
+        {/* <Clock />, */}
         <Basket />,
-        <Tables handleChange={this.handleChange.bind(this)} course_modules={this.state.course_modules} />,
+        <Tables handleChange={this.handleChange.bind(this)} product_item={this.state.product_item} />,
         <Footer />,
 
       </div>

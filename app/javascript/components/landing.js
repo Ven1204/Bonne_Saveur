@@ -5,6 +5,7 @@ import Footer from './footer/footer'
 import Tables from './tables/tables'
 import NameForm from './form/form';
 import Basket from '../components/basket/basket'
+import Clock from './clocks/Clock';
 
 
 class Landing extends Component {
@@ -42,6 +43,7 @@ class Landing extends Component {
     return (
       <div>
         {/* <Navbar />, */}
+        <Clock />,
         <Basket />,
         <Tables handleChange={this.handleChange.bind(this)} course_modules={this.state.course_modules} />,
         <Footer />,

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Landing/>,
     // <Banner />,
+
     document.body.appendChild(document.createElement('div')),
   )
 })

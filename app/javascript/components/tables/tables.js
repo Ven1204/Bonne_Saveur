@@ -8,7 +8,7 @@ class Tables extends Component {
   }
 
   render(){
-    const lists = this.props.course_modules.map((data) =>{
+    const lists = this.props.product_item.map((data) =>{
       let handleChange = this.props.handleChange.bind(this, data)
       return (
         data.active ?
@@ -21,7 +21,7 @@ class Tables extends Component {
       <div className='pt-5 pb-5'>
         <div className='container'>
           <div className='text-center'>
-            <h2 className='pt-4 pb-4'>Full Course Products</h2>
+            <h2 className='pt-4 pb-4'>Our Products</h2>
           </div>
           <div>
             {lists}

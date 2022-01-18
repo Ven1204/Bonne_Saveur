@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Tables from '../tables/tables'
+import Clock from '../clocks/Clock';
+
 
 
 class Basket extends Component {
@@ -22,7 +23,10 @@ class Basket extends Component {
     return(
 
       <div className='bg-white'>
-         <img onClick={hideBanner} src={"https://res.cloudinary.com/rvnsllrry/image/upload/v1640625987/Bonne_Saveur_-_logo_q2qg53.png"} width="80" height="80" alt="Bonne Saveur logo" />
+        <div className='d-flex align-center'>
+          <img onClick={hideBanner} src={"https://res.cloudinary.com/rvnsllrry/image/upload/v1640625987/Bonne_Saveur_-_logo_q2qg53.png"} width="60" height="40" alt="Bonne Saveur logo" />
+          <Clock />
+        </div>
         { x && (
           <div>
             <Section className="home-section--1">
@@ -31,7 +35,7 @@ class Basket extends Component {
                   <div className='col col-sm-12 col-md-5'>
                     <div className='pt-4 mt-4 text-center'>
                       <Heading>Bonne Saveur</Heading>
-                      <Subheading>Show us your creative side</Subheading>
+                      <Subheading>Savor every moment.</Subheading>
                       <div className='cta-wrapper'>
                         <Start onClick={hideBanner} className='btn start-btn'>Savourer l'Expérience</Start>
                       </div>

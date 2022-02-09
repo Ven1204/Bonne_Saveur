@@ -1,4 +1,5 @@
 import React from 'react'
+import { List } from '../list/list'
 
 class Banner extends React.Component {
 
@@ -12,7 +13,6 @@ class Banner extends React.Component {
       <div>
         <section className="home-section-1--welcome">
           <div className="banner">
-            {/* <div className='row'> */}
               <div className='col col-sm-12 pb-4' style={{backgroundColor: 'white'}}>
                 <div className='pt-4 mb-4 pb-4 text-center'>
                   <h1>Bonne Saveur</h1>
@@ -22,28 +22,12 @@ class Banner extends React.Component {
                   </div>
                 </div>
               </div>
-            {/* </div> */}
           </div>
         </section>
 
-      <div className="col col-sm-12">
-        <h1>Our Products</h1>
-        <div className='col col-sm-12'>
-          <div>
-            <h1>Cakes</h1>
-          </div>
-          <div >
-            <h1>Candies</h1>
-          </div>
-          <div >
-            <h1>Breads</h1>
-          </div>
-          <div >
-            <h1>Others</h1>
-          </div>
-            </div>
+      <div>
+        <List />
       </div>
-
 {/*
         <section className="home-section-2--videos">
           <div className='col col-sm-12'>

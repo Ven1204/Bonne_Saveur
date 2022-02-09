@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import Navbar from './navbar/navbar'
-import Footer from './footer/footer'
-import Tables from './tables/tables'
-import Basket from '../components/basket/basket'
-
-
+import Banner from './newLanding/banner';
 
 class Landing extends Component {
   constructor() {
@@ -40,12 +35,8 @@ class Landing extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar />, */}
-        {/* <Clock />, */}
-        <Basket />,
-        <Tables handleChange={this.handleChange.bind(this)} product_item={this.state.product_item} />,
-        <Footer />,
-
+       <Banner />
+        {/* <h1>hello react</h1> */}
       </div>
     )
   }

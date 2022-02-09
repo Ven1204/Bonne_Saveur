@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import CourseList from './courseList';
+import React from 'react';
 
 
 const List = (props) => {

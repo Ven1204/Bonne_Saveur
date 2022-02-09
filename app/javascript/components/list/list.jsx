@@ -2,7 +2,7 @@ import React,  { Component } from 'react';
 import activeList from './activeList';
 
 
-export class List extends Component {
+class List extends Component {
 
   render(){
 
@@ -29,6 +29,6 @@ export class List extends Component {
     </div>
   );
   }
-
-
 }
+
+export default List;

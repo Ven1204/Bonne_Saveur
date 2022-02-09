@@ -1,7 +1,7 @@
-import React from 'react'
-import { List } from '../list/list'
+import React from 'react';
 
-import Clock from '../clocks/Clock'
+// import Clock from '../clocks/Clock';
+// import Footer from '../footer/footer';
 
 class Banner extends React.Component {
 
@@ -13,7 +13,6 @@ class Banner extends React.Component {
   render() {
     return (
       <div>
-        <Clock />
         <section className="home-section-1--welcome">
           <div className="banner">
               <div className='col col-sm-12 pb-4' style={{backgroundColor: 'white'}}>
@@ -27,10 +26,6 @@ class Banner extends React.Component {
               </div>
           </div>
         </section>
-
-      <div>
-        <List />
-      </div>
 {/*
         <section className="home-section-2--videos">
           <div className='col col-sm-12'>
@@ -47,21 +42,6 @@ class Banner extends React.Component {
             </div>
           </div>
         </section> */}
-
-{/* footer section */}
-        <section className="home-section-4--footer">
-          <div className='col col-sm-12' style={{backgroundColor: 'white'}}>
-            <div className='pt-4 mt-4 ' >
-              <div>
-                Bonne Saveur®
-              </div>
-              <i className="fab fa-facebook"></i>
-              <i className="fab fa-instagram-square"></i>
-              <i className="fab fa-twitter-square"></i>
-              <i className="fab fa-youtube"></i>
-            </div>
-          </div>
-        </section>
       </div>
     )
   };

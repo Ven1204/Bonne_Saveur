@@ -6,7 +6,11 @@ class Clock extends React.Component {
     this.state = { date: new Date() };
   }
   render() {
-    return <div>{this.state.date.toLocaleTimeString()}</div>;
+    return (
+      <div style={{backgroundColor: 'white'}}>
+        {this.state.date.toLocaleTimeString()}
+      </div>
+    );
   }
   componentDidMount() {
     const oneSecond = 1000;

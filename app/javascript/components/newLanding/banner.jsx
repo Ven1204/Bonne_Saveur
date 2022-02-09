@@ -1,6 +1,8 @@
 import React from 'react'
 import { List } from '../list/list'
 
+import Clock from '../clocks/Clock'
+
 class Banner extends React.Component {
 
   alerting() {
@@ -11,6 +13,7 @@ class Banner extends React.Component {
   render() {
     return (
       <div>
+        <Clock />
         <section className="home-section-1--welcome">
           <div className="banner">
               <div className='col col-sm-12 pb-4' style={{backgroundColor: 'white'}}>
